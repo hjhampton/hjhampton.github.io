@@ -5,14 +5,16 @@ canvas.height = window.innerHeight;
 
 var c = canvas.getContext('2d');
 
-var x = 200;
-var y = 200;
-var dx = 5;
-var dy = 20;
 var boxHeight = 200;
 var boxWidth = 400;
+var x = Math.floor(Math.random() * (innerWidth - boxWidth))
+var y = Math.floor(Math.random() * (innerHeight - boxHeight))
+var dx = 1;
+var dy = 1;
 
 
+
+//https://www.w3schools.com/js/js_random.asp
 
 function animate(){
 	requestAnimationFrame(animate);
@@ -37,4 +39,5 @@ if(y > innerHeight - boxHeight || y < 0){
 }
 }
 
-animate();
+//animate();
+window.addEventListener('mousemove', animate);
