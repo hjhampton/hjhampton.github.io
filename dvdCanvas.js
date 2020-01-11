@@ -7,8 +7,8 @@ var c = canvas.getContext('2d');
 
 var x = 200;
 var y = 200;
-var dx = 15;
-var dy = 10;
+var dx = 5;
+var dy = 20;
 var boxHeight = 200;
 var boxWidth = 400;
 
