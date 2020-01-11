@@ -9,6 +9,8 @@ var x = 200;
 var y = 200;
 var dx = 15;
 var dy = 10;
+var boxHeight = 200;
+var boxWidth = 400;
 
 
 
@@ -18,19 +20,19 @@ function animate(){
 	
 c.beginPath();
 c.fillStyle = "blue";
-c.fillRect(x, y, 400, 200);
+c.fillRect(x, y, boxWidth, boxHeight);
 c.stroke();
 
 
 
 
-if(x > innerWidth || x < 0){
+if(x > innerWidth - boxWidth || x < 0){
 	dx = -dx;
 }
 	x += dx;
 	y += dy;
 
-if(y > innerHeight || y < 0){
+if(y > innerHeight - boxHeight || y < 0){
 	dy = -dy;
 }
 }
