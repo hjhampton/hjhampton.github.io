@@ -42,3 +42,7 @@ function medianNumbers(){
    document.getElementById("list").innerHTML = noWithSpace;
 
  }
+//HELP FROM
+//https://www.w3schools.com/jsref/jsref_sort.asp
+//https://www.w3schools.com/js/js_arrays.asp
+//https://stackoverflow.com/questions/18157411/how-would-i-store-the-number-in-an-html-form-input-as-a-javascript-variable-when
