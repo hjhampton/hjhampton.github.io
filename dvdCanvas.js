@@ -11,8 +11,8 @@ var boxHeight = 200;
 var boxWidth = 400;
 var x = Math.floor(Math.random() * (innerWidth - boxWidth))
 var y = Math.floor(Math.random() * (innerHeight - boxHeight))
-var dx = 1;
-var dy = 1;
+var dx = 5;
+var dy = 5;
 
 var counter = 0;
 
@@ -22,12 +22,12 @@ var counter = 0;
 function animate(){
 	requestAnimationFrame(animate);
 	c.clearRect(0, 0, innerWidth, innerHeight);
-	
+
 c.font = "50px Comic Sans MS";
 c.fillStyle = "orange";
 c.textAlign = "center";
-c.fillText("Corners Hit: " + counter, canvas.width/2, canvas.height/2);
-	
+//c.fillText("Corners Hit: " + counter, canvas.width/2, canvas.height/2);
+
 c.beginPath();
 c.fillStyle = "blue";
 c.fillRect(x, y, boxWidth, boxHeight);
@@ -53,14 +53,3 @@ window.addEventListener('resize', function(){
 	canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 });
-	
-
-
-	
-	
-	
-	
-	
-	
-	
-	
