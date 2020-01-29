@@ -42,6 +42,14 @@ function medianNumbers(){
    document.getElementById("list").innerHTML = noWithSpace;
 
  }
+
+ function addNumbers(){
+   storeNumbers();
+   var groupOfNo = [no1, no2, no3, no4, no5]
+   var sum = no1 + no2;
+   document.getElementById("list").innerHTML = sum;
+
+ }
 //HELP FROM
 //https://www.w3schools.com/jsref/jsref_sort.asp
 //https://www.w3schools.com/js/js_arrays.asp
